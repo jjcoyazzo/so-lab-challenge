@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SO Lab Challenge</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6f8;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #007BFF;
+    width: 0%;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: #e9ecef;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #007BFF;
+    color: white;
+}
+
+.correct {
+    background: #28a745 !important;
+    color: white;
+}
+
+.incorrect {
+    background: #dc3545 !important;
+    color: white;
+}
+
+#mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="contenedor">
+    <h2>Medición y Desempeño</h2>
+
+    <div class="progress">
+        <div class="progress-bar" id="barra"></div>
+    </div>
+
+    <p id="contador"></p>
+    <p id="pregunta"></p>
+
+    <div id="opciones"></div>
+
+    <p id="mensaje"></p>
+
+    <button onclick="siguiente()">Siguiente</button>
+</div>
+
+<script src="js/app.js"></script>
+
+<script>
+// =======================
+// MOSTRAR RESULTADO FINAL
+// =======================
+function mostrarResultado(score, total){
+
+    let porcentaje = Math.round((score / total) * 100);
+
+    document.getElementById("contenedor").innerHTML = `
+        <h2>Examen terminado</h2>
+        <p><strong>Total de preguntas:</strong> ${total}</p>
+        <p><strong>Respuestas correctas:</strong> ${score}</p>
+        <p><strong>Calificación:</strong> ${porcentaje}%</p>
+        <br>
+        <button onclick="location.reload()">Reintentar</button>
+    `;
+}
+</script>
+
+</body>
+</html>
