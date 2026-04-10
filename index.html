@@ -3,52 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Inicio - Evaluación SO</title>
-
-<style>
-body{
-    font-family: Arial;
-    background: linear-gradient(135deg,#1e3c72,#2a5298);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    width:400px;
-    border-radius:12px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-input{
-    width:90%;
-    padding:10px;
-    margin:10px;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
-
-button{
-    width:100%;
-    padding:10px;
-    background:#007BFF;
-    color:white;
-    border:none;
-    cursor:pointer;
-    border-radius:5px;
-}
-
-button:hover{
-    background:#0056b3;
-}
-
-.error{
-    border:2px solid red;
-}
-</style>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -63,39 +18,21 @@ button:hover{
 </div>
 
 <script>
-
 function iniciar(){
+    let nombre = document.getElementById("nombre").value;
+    let grupo = document.getElementById("grupo").value;
 
-    let nombre = document.getElementById("nombre");
-    let grupo = document.getElementById("grupo");
-
-    // 🔄 limpiar estilos
-    nombre.classList.remove("error");
-    grupo.classList.remove("error");
-
-    // ❌ validar campos
-    if(nombre.value.trim() === "" || grupo.value.trim() === ""){
-        alert("⚠️ Completa todos los campos");
-
-        if(nombre.value.trim() === ""){
-            nombre.classList.add("error");
-        }
-
-        if(grupo.value.trim() === ""){
-            grupo.classList.add("error");
-        }
-
+    if(nombre === "" || grupo === ""){
+        alert("Completa todos los campos");
         return;
     }
 
-    // ✅ GUARDAR DATOS (SIN BORRAR RESULTADOS)
-    localStorage.setItem("nombre", nombre.value.trim());
-    localStorage.setItem("grupo", grupo.value.trim());
+    localStorage.clear();
+    localStorage.setItem("nombre", nombre);
+    localStorage.setItem("grupo", grupo);
 
-    // 🚀 REDIRECCIÓN
     window.location.href = "quiz.html";
 }
-
 </script>
 
 </body>
