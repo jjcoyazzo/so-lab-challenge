@@ -1,6 +1,6 @@
 let banco = typeof window.banco !== "undefined" ? window.banco : [];
 
-console.log("TOTAL PREGUNTAS:", banco.length);
+
 
 function mezclar(array){
     return array.sort(() => Math.random() - 0.5);

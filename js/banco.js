@@ -267,7 +267,7 @@ opciones:[
 "La memoria no existe"
 ],
 correcta:0
-}
+},
 
 /* =========================
 CONTINUACIÓN HASTA 50
@@ -560,4 +560,3 @@ correcta:0
 }
 
 ];
-
