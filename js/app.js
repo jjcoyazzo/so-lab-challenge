@@ -1,12 +1,4 @@
-// ============================
-// BANCO DE PREGUNTAS
-// ============================
-
-let banco = window.banco || []; // por si lo tienes en otro archivo
-
-// ============================
-// MEZCLAR
-// ============================
+let banco = typeof window.banco !== "undefined" ? window.banco : [];
 
 function mezclar(array){
     return array.sort(() => Math.random() - 0.5);
@@ -22,31 +14,23 @@ preguntas.forEach(p=>{
     p.correcta = ops.findIndex(o=>o.i===p.correcta);
 });
 
-// ============================
-// VARIABLES
-// ============================
-
 let actual = 0;
 let correctas = 0;
 let respondida = false;
 
-// ============================
-// CARGAR PREGUNTA
-// ============================
-
 function cargar(){
+
+    if(preguntas.length === 0){
+        alert("❌ No hay preguntas cargadas");
+        return;
+    }
+
     respondida = false;
 
     let p = preguntas[actual];
 
-    let temaElemento = document.getElementById("tema");
-    if(temaElemento){
-        temaElemento.innerText = "Tema: " + p.tema;
-    }
-
     document.getElementById("pregunta").innerText = p.pregunta;
     document.getElementById("contador").innerText = `Pregunta ${actual+1} de ${preguntas.length}`;
-
     document.getElementById("barra").style.width = ((actual)/preguntas.length)*100 + "%";
 
     let opcionesDiv = document.getElementById("opciones");
@@ -56,10 +40,6 @@ function cargar(){
         opcionesDiv.innerHTML += `<button onclick="responder(this,${i})">${op}</button>`;
     });
 }
-
-// ============================
-// RESPONDER
-// ============================
 
 function responder(btn,i){
     if(respondida) return;
@@ -76,10 +56,6 @@ function responder(btn,i){
     if(i === p.correcta) correctas++;
 }
 
-// ============================
-// SIGUIENTE
-// ============================
-
 function siguiente(){
     actual++;
 
@@ -90,73 +66,31 @@ function siguiente(){
     }
 }
 
-// ============================
-// GUARDAR RESULTADO (CORREGIDO)
-// ============================
-
 function guardarResultadoLocal(resultado){
-
-    let lista = [];
-
-    let datosGuardados = localStorage.getItem("resultados");
-
-    if(datosGuardados){
-        try{
-            lista = JSON.parse(datosGuardados);
-
-            // 🔒 Validar que sea arreglo
-            if(!Array.isArray(lista)){
-                lista = [];
-            }
-
-        }catch(e){
-            console.error("Error leyendo localStorage:", e);
-            lista = [];
-        }
-    }
-
+    let lista = JSON.parse(localStorage.getItem("resultados")) || [];
     lista.push(resultado);
-
     localStorage.setItem("resultados", JSON.stringify(lista));
-
-    console.log("Resultados guardados:", lista);
 }
 
-// ============================
-// FINALIZAR EXAMEN
-// ============================
-
 function finalizar(){
-
     let puntaje = Math.round((correctas / preguntas.length) * 100);
 
-    let nombre = localStorage.getItem("nombre") || "Sin nombre";
-    let grupo = localStorage.getItem("grupo") || "Sin grupo";
-
     let resultado = {
-        nombre: nombre,
-        grupo: grupo,
+        nombre: localStorage.getItem("nombre"),
+        grupo: localStorage.getItem("grupo"),
         puntaje: puntaje,
-        estado: puntaje >= 90 ? "Aprobado" : "Reprobado",
         fecha: new Date().toLocaleString()
     };
 
-    // ✅ GUARDAR SIN BORRAR LOS ANTERIORES
     guardarResultadoLocal(resultado);
 
-    // ✅ MENSAJE SOLO (como querías)
     if(puntaje >= 90){
-        alert("✅ Evaluación aprobada. Resultado guardado correctamente.");
+        alert("✅ Aprobado, resultado guardado");
     }else{
-        alert("❌ No alcanzaste el 90%. Debes repetir la evaluación.");
+        alert("❌ Reprobado, intenta nuevamente");
     }
 
-    // 🔁 REDIRECCIÓN
-    location.href = "index.html";
+    window.location.replace("index.html");
 }
-
-// ============================
-// INICIO
-// ============================
 
 window.onload = cargar;
