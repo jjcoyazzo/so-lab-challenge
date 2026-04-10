@@ -1,19 +1,22 @@
 let banco = typeof window.banco !== "undefined" ? window.banco : [];
 
-
-
 function mezclar(array){
     return array.sort(() => Math.random() - 0.5);
 }
 
 let preguntas = mezclar([...banco]);
 
+// 🔥 CORRECCIÓN AQUÍ
 preguntas.forEach(p=>{
+    let correctaOriginal = p.correcta;
+
     let ops = p.opciones.map((op,i)=>({op,i}));
     ops = mezclar(ops);
 
     p.opciones = ops.map(o=>o.op);
-    p.correcta = ops.findIndex(o=>o.i===p.correcta);
+
+    // buscar la nueva posición de la correcta
+    p.correcta = ops.findIndex(o=>o.i === correctaOriginal);
 });
 
 let actual = 0;
