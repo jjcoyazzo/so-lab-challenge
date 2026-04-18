@@ -1,560 +1,829 @@
-window.banco = [
+    window.banco = [
 
 /* =========================
-ACTIVIDAD 1: TOP (ANÁLISIS)
+ANÁLISIS DE RIESGOS
 ========================= */
 
 {
-pregunta:"Al observar 'top', el valor 'up 2:35' aparece en la parte superior. ¿Cuál interpretación es la más correcta?",
+pregunta:"¿Cuál es la diferencia correcta entre activo, amenaza e impacto?",
 opciones:[
-"Indica el tiempo total que el sistema ha permanecido encendido sin reiniciarse",
-"Representa el tiempo de ejecución del proceso con mayor consumo de CPU",
-"Es el tiempo que lleva abierta la terminal actual",
-"Corresponde al tiempo de respuesta promedio del sistema"
+"Activo es lo que se protege, amenaza es la causa y el impacto es la consecuencia",
+"Activo es el daño, amenaza es la solución e impacto es el proceso",
+"Activo es un usuario, amenaza es un comando e impacto es un archivo",
+"No existe diferencia entre ellos"
 ],
 correcta:0
 },
 
 {
-pregunta:"El campo 'load average: 0.50, 0.70, 0.90' muestra tres valores. ¿Cuál es la interpretación más adecuada?",
+pregunta:"Un estudiante define como amenaza 'pérdida de información'. ¿Qué error comete?",
 opciones:[
-"Refleja la carga del sistema en intervalos de 1, 5 y 15 minutos respectivamente",
-"Indica el uso de CPU, memoria y disco en ese orden",
-"Representa el número de usuarios conectados en distintos momentos",
-"Corresponde al promedio de procesos finalizados recientemente"
+"Confunde impacto con amenaza",
+"Confunde activo con impacto",
+"No existe error",
+"Confunde sistema con usuario"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si un proceso tiene un valor alto en %CPU pero bajo en %MEM, ¿qué se puede inferir?",
+pregunta:"¿Por qué el análisis de riesgos debe realizarse antes de configurar un sistema como Ubuntu?",
 opciones:[
-"El proceso está utilizando intensivamente el procesador pero no requiere gran cantidad de memoria",
-"El proceso está almacenando información en disco en lugar de memoria",
-"El proceso está en estado inactivo y no afecta el rendimiento",
-"El proceso utiliza exclusivamente recursos de red"
+"Permite identificar qué proteger y definir controles adecuados",
+"Reduce automáticamente el uso de CPU",
+"Evita la instalación de software",
+"Mejora la velocidad de red"
 ],
 correcta:0
 },
 
 {
-pregunta:"En la columna 'S' aparece la letra 'S'. ¿Cuál es la mejor interpretación de este estado?",
+pregunta:"¿Qué describe mejor un activo en un sistema?",
 opciones:[
-"El proceso está en espera (sleep), listo para ejecutarse cuando sea necesario",
-"El proceso está detenido permanentemente y no puede continuar",
-"El proceso está consumiendo el máximo de CPU",
-"El proceso ha sido eliminado del sistema"
+"Cualquier recurso que tiene valor y debe protegerse",
+"Un error del sistema",
+"Un ataque informático",
+"Un comando de terminal"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si el 'load average' es mayor que el número de núcleos del CPU, ¿qué implica?",
+pregunta:"¿Qué representa una amenaza?",
 opciones:[
-"El sistema tiene más procesos esperando ejecutarse que capacidad disponible",
-"El sistema está funcionando de manera óptima",
-"El uso de memoria es excesivo pero el CPU está libre",
-"El disco duro está lleno y limita el rendimiento"
+"Una causa potencial de daño a un activo",
+"El resultado de un fallo",
+"Un recurso del sistema",
+"Una política de seguridad"
 ],
 correcta:0
 },
 
 {
-pregunta:"Un valor alto en TIME+ indica que:",
+pregunta:"¿Qué representa el impacto?",
 opciones:[
-"El proceso ha acumulado mucho tiempo utilizando CPU desde que inició",
-"El proceso lleva mucho tiempo en estado de reposo",
-"El proceso ha sido ejecutado múltiples veces por el usuario",
-"El sistema tiene problemas de sincronización"
+"La consecuencia de que una amenaza se materialice",
+"El origen del problema",
+"Un usuario del sistema",
+"Un proceso activo"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si un proceso tiene alto valor en VIRT pero bajo en RES, ¿qué significa?",
+pregunta:"Si un usuario administrador comparte su contraseña, el nivel de riesgo es:",
 opciones:[
-"El proceso reserva memoria virtual, pero no toda está en uso en la RAM",
-"El proceso está usando toda la memoria física disponible",
-"El proceso está completamente almacenado en disco",
-"El proceso no utiliza memoria"
+"Crítico",
+"Bajo",
+"Medio",
+"Irrelevante"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si varios procesos aparecen con consumo bajo pero el sistema sigue lento, ¿qué se puede concluir?",
+pregunta:"¿Por qué no todos los riesgos deben clasificarse como altos?",
 opciones:[
-"Puede existir una carga acumulada que no es evidente en un solo proceso",
-"El sistema está funcionando correctamente",
-"El CPU no está siendo utilizado",
-"El problema es exclusivamente de red"
+"Depende de impacto y probabilidad",
+"Porque no afectan al sistema",
+"Porque son iguales",
+"Porque no se analizan"
 ],
 correcta:0
 },
 
 {
-pregunta:"La columna NI (nice value) afecta directamente a:",
+pregunta:"¿Qué factor es clave para determinar el nivel de riesgo?",
 opciones:[
-"La prioridad con la que un proceso es atendido por el sistema",
-"El consumo de memoria RAM",
-"El uso del disco duro",
-"La cantidad de usuarios conectados"
+"Impacto y probabilidad",
+"Cantidad de usuarios",
+"Color del sistema",
+"Tipo de hardware"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si un proceso tiene PR bajo y NI negativo, esto indica que:",
+pregunta:"¿Qué ocurre si no se realiza análisis de riesgos?",
 opciones:[
-"Tiene mayor prioridad frente a otros procesos",
-"Está en estado de reposo",
-"No puede ejecutarse",
-"Está usando demasiada memoria"
-],
-correcta:0
-},
-
-/* =========================
-ACTIVIDAD 2: MEMORIA
-========================= */
-
-{
-pregunta:"En el comando free -m, si 'free' es bajo pero 'available' es alto, ¿qué significa realmente?",
-opciones:[
-"El sistema tiene memoria disponible gracias a la liberación de caché cuando sea necesario",
-"El sistema está completamente saturado de memoria",
-"No hay memoria disponible para nuevas aplicaciones",
-"La RAM está dañada"
-],
-correcta:0
-},
-
-{
-pregunta:"El valor 'buff/cache' representa:",
-opciones:[
-"Memoria utilizada temporalmente para mejorar el rendimiento del sistema",
-"Memoria dañada que no puede ser utilizada",
-"Memoria exclusiva del kernel que no se libera",
-"Espacio reservado para la red"
-],
-correcta:0
-},
-
-{
-pregunta:"Si la memoria 'used' es alta, ¿siempre es un problema?",
-opciones:[
-"No necesariamente, ya que puede incluir memoria utilizada como caché",
-"Sí, siempre indica fallo del sistema",
-"No, porque no tiene impacto en el rendimiento",
-"Sí, porque significa que el CPU está saturado"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Cuál sería una acción adecuada si la memoria realmente está saturada?",
-opciones:[
-"Cerrar procesos innecesarios o agregar más memoria",
-"Reiniciar el sistema constantemente",
-"Borrar archivos del disco duro",
-"Desconectar la red"
-],
-correcta:0
-},
-
-{
-pregunta:"El valor 'shared' indica:",
-opciones:[
-"Memoria que es utilizada por múltiples procesos simultáneamente",
-"Memoria exclusiva de un solo proceso",
-"Memoria del sistema operativo únicamente",
-"Memoria del disco duro"
+"Se implementan medidas sin criterio",
+"El sistema mejora automáticamente",
+"No afecta en nada",
+"Se optimiza el rendimiento"
 ],
 correcta:0
 },
 
 /* =========================
-ACTIVIDAD 3: DISCO
+GESTIÓN DE USUARIOS
 ========================= */
 
 {
-pregunta:"El comando df -h utiliza la opción -h para:",
+pregunta:"¿Qué implica pertenecer al grupo sudo?",
 opciones:[
-"Mostrar los tamaños en formato legible (KB, MB, GB)",
-"Ocultar archivos del sistema",
-"Optimizar el uso del disco",
-"Reducir el consumo de CPU"
+"Tener privilegios administrativos",
+"Ser usuario limitado",
+"No tener acceso",
+"Solo leer archivos"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si una partición tiene Use% cercano a 100%, ¿qué riesgo existe?",
+pregunta:"¿Por qué no todos los usuarios deben ser administradores?",
 opciones:[
-"El sistema puede fallar al guardar nuevos datos",
-"El CPU dejará de funcionar",
-"La memoria RAM se borrará",
-"La red se desconectará"
+"Para aplicar el principio de mínimo privilegio",
+"Para mejorar velocidad",
+"Para reducir memoria",
+"Porque no pueden ejecutar comandos"
 ],
 correcta:0
 },
 
 {
-pregunta:"El campo 'Mounted on' indica:",
+pregunta:"Si todos los usuarios son administradores, ¿qué riesgo existe?",
 opciones:[
-"La ubicación donde está accesible la partición dentro del sistema",
-"El tamaño total del disco",
-"El uso del CPU",
-"El estado de la memoria"
+"Errores y accesos indebidos",
+"Mejor seguridad",
+"Mayor rendimiento",
+"Ninguno"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si la partición raíz (/) está llena, ¿qué impacto tiene?",
+pregunta:"¿Qué diferencia hay entre sudo y root?",
 opciones:[
-"Puede afectar el funcionamiento general del sistema operativo",
-"No tiene impacto",
-"Solo afecta a la red",
-"Solo afecta al CPU"
+"sudo da acceso temporal, root es acceso total permanente",
+"No hay diferencia",
+"root es más limitado",
+"sudo no ejecuta comandos"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué principio de seguridad se aplica al limitar privilegios?",
+opciones:[
+"Mínimo privilegio",
+"Máximo acceso",
+"Acceso libre",
+"Control total"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué podría pasar si un usuario estándar obtiene acceso a sudo?",
+opciones:[
+"Puede ejecutar comandos administrativos",
+"No ocurre nada",
+"Pierde acceso",
+"Se bloquea el sistema"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante verificar grupos de usuario?",
+opciones:[
+"Para confirmar permisos asignados",
+"Para mejorar CPU",
+"Para liberar memoria",
+"Para borrar archivos"
 ],
 correcta:0
 },
 
 /* =========================
-ACTIVIDAD 4: INTEGRADOR
+PERMISOS
 ========================= */
 
 {
-pregunta:"Si CPU, RAM y disco presentan valores altos simultáneamente, ¿qué indica?",
+pregunta:"¿Qué significa chmod 600?",
 opciones:[
-"El sistema está saturado y su rendimiento se ve afectado",
-"El sistema está funcionando correctamente",
-"Solo hay un problema de red",
-"No hay ningún problema"
+"Solo el propietario puede leer y escribir",
+"Todos tienen acceso",
+"Nadie accede",
+"Solo root accede"
 ],
 correcta:0
 },
 
 {
-pregunta:"Como administrador, ante un sistema lento, la mejor acción sería:",
+pregunta:"¿Qué significa chmod 644?",
 opciones:[
-"Analizar procesos y liberar recursos innecesarios",
-"Apagar el equipo sin revisar",
-"Ignorar el problema",
-"Eliminar todos los archivos"
+"Propietario lee/escribe, otros solo leen",
+"Todos modifican",
+"Nadie lee",
+"Solo root accede"
 ],
 correcta:0
 },
 
 {
-pregunta:"El análisis del desempeño del sistema implica:",
+pregunta:"¿Qué riesgo tiene usar permisos 777?",
 opciones:[
-"Interpretar datos para tomar decisiones",
-"Memorizar comandos",
-"Ejecutar sin analizar",
-"Copiar resultados"
+"Cualquier usuario puede modificar el archivo",
+"Mejora la seguridad",
+"Reduce CPU",
+"No tiene impacto"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si el sistema responde lento pero los valores parecen normales, ¿qué se puede inferir?",
+pregunta:"¿Qué propiedad protege el control de permisos?",
 opciones:[
-"Puede existir un problema no evidente o externo",
-"El sistema está perfecto",
-"El CPU está apagado",
-"La memoria no existe"
+"Confidencialidad e integridad",
+"Velocidad",
+"CPU",
+"Red"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué sucede si un archivo confidencial tiene permisos abiertos?",
+opciones:[
+"Puede ser accedido o modificado por otros usuarios",
+"Se vuelve más seguro",
+"Reduce memoria",
+"No tiene impacto"
 ],
 correcta:0
 },
 
 /* =========================
-CONTINUACIÓN HASTA 50
+FIREWALL
 ========================= */
 
 {
-pregunta:"Si el valor de 'load average' aumenta progresivamente, ¿qué indica?",
+pregunta:"¿Qué es un firewall?",
 opciones:[
-"El sistema está acumulando procesos en espera de CPU",
-"El sistema está liberando memoria constantemente",
-"El disco duro está vacío",
-"La red está saturada"
+"Sistema que controla tráfico de red",
+"Antivirus",
+"Editor",
+"Gestor de memoria"
 ],
 correcta:0
 },
 
 {
-pregunta:"Un proceso en estado 'R' significa que:",
+pregunta:"¿Qué implica abrir puertos innecesarios?",
 opciones:[
-"Está en ejecución o listo para ejecutarse",
-"Está detenido permanentemente",
-"Está en espera de entrada del usuario",
-"Está almacenado en disco"
+"Aumenta superficie de ataque",
+"Mejora rendimiento",
+"Reduce CPU",
+"No tiene efecto"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si un proceso tiene alto %MEM, ¿qué implica?",
+pregunta:"El puerto 22 corresponde a:",
 opciones:[
-"Está consumiendo una gran cantidad de memoria RAM",
-"Está usando más CPU que memoria",
-"No está activo",
-"Está en segundo plano sin impacto"
+"SSH",
+"HTTP",
+"FTP",
+"DNS"
 ],
 correcta:0
 },
 
 {
-pregunta:"El valor RES representa:",
+pregunta:"¿Por qué abrir solo servicios necesarios?",
 opciones:[
-"La memoria física realmente utilizada por el proceso",
-"La memoria total del sistema",
-"La memoria virtual disponible",
-"La memoria del disco"
+"Reduce riesgos",
+"Mejora CPU",
+"Reduce memoria",
+"No importa"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si el sistema tiene muchos procesos en estado 'S', significa que:",
+pregunta:"¿Qué puede hacer un atacante con un puerto abierto?",
 opciones:[
-"Muchos procesos están en espera de algún evento",
-"El sistema está bloqueado",
-"No hay procesos activos",
-"Todos los procesos están finalizados"
+"Intentar acceder o explotar vulnerabilidades",
+"Aumentar rendimiento",
+"Reducir memoria",
+"Nada"
+],
+correcta:0
+},
+
+/* =========================
+CONTRASEÑAS
+========================= */
+
+{
+pregunta:"¿Qué objetivo tiene una política de contraseñas?",
+opciones:[
+"Definir reglas para todas las contraseñas de los usuarios",
+"Crear una contraseña única para el sistema",
+"Eliminar usuarios automáticamente",
+"Reducir el uso de CPU"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué sucede si se incrementa el valor NI de un proceso?",
+pregunta:"¿Qué ventaja principal tiene una contraseña larga?",
 opciones:[
-"Disminuye su prioridad",
-"Aumenta su uso de CPU",
-"Aumenta su uso de memoria",
-"Se detiene automáticamente"
+"Aumenta la resistencia a ataques de fuerza bruta",
+"Reduce el uso de memoria",
+"Mejora la velocidad del sistema",
+"No tiene impacto"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si el CPU está al 100% pero el load average es bajo, ¿qué podría indicar?",
+pregunta:"¿Qué tipo de ataque se dificulta con contraseñas largas?",
 opciones:[
-"Un proceso está usando intensivamente el CPU pero no hay cola de espera",
-"El sistema está saturado completamente",
-"No hay procesos activos",
-"El sistema está apagado"
+"Fuerza bruta",
+"Phishing",
+"Denegación de servicio",
+"Intercepción de red"
 ],
 correcta:0
 },
 
 {
-pregunta:"El comando top se utiliza principalmente para:",
+pregunta:"¿Por qué la complejidad en contraseñas es importante?",
 opciones:[
-"Monitorear procesos en tiempo real",
-"Eliminar archivos",
-"Configurar red",
-"Instalar software"
+"Evita patrones predecibles",
+"Reduce uso de CPU",
+"Aumenta memoria",
+"No tiene impacto"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si un proceso tiene TIME+ alto pero %CPU bajo actualmente:",
+pregunta:"¿Qué problema puede generar una política de contraseñas demasiado estricta?",
 opciones:[
-"Usó CPU intensivamente en el pasado",
-"Está usando CPU en este momento",
-"No ha sido ejecutado",
-"Está bloqueado permanentemente"
+"Usuarios pueden escribirlas o reutilizarlas",
+"Mejora la seguridad total",
+"Reduce accesos",
+"No afecta nada"
 ],
 correcta:0
 },
 
 {
-pregunta:"El valor VIRT incluye:",
+pregunta:"¿Por qué es importante el equilibrio entre seguridad y usabilidad?",
 opciones:[
-"Memoria total reservada (RAM + swap + librerías)",
-"Solo memoria RAM",
-"Solo memoria caché",
-"Solo memoria compartida"
+"Para evitar malas prácticas de los usuarios",
+"Para mejorar CPU",
+"Para reducir disco",
+"No tiene importancia"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si el swap comienza a usarse constantemente:",
+pregunta:"¿Qué riesgo se reduce al cambiar contraseñas periódicamente?",
 opciones:[
-"Puede indicar falta de RAM",
-"El sistema está optimizado",
-"El CPU está libre",
-"No hay procesos activos"
+"Uso indebido de credenciales comprometidas",
+"Consumo de memoria",
+"Uso de CPU",
+"Fallas de disco"
 ],
 correcta:0
 },
 
 {
-pregunta:"El uso excesivo de swap provoca:",
+pregunta:"¿Qué sucede si no se cambian las contraseñas nunca?",
 opciones:[
-"Disminución del rendimiento",
-"Aumento del rendimiento",
-"Mejor uso de CPU",
-"Ningún efecto"
+"Mayor riesgo si son comprometidas",
+"Mejora el rendimiento",
+"No pasa nada",
+"Reduce vulnerabilidades"
 ],
 correcta:0
 },
 
 {
-pregunta:"El comando free muestra:",
+pregunta:"¿Qué característica mejora la seguridad de una contraseña?",
 opciones:[
-"Estado de la memoria RAM",
-"Estado del CPU",
-"Estado de la red",
-"Estado del disco"
+"Combinación de diferentes tipos de caracteres",
+"Solo longitud corta",
+"Uso de palabras comunes",
+"Repetición de caracteres"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si 'available' es bajo en free, significa:",
+pregunta:"¿Cuál es el objetivo de una política institucional de contraseñas?",
 opciones:[
-"Poca memoria disponible para nuevos procesos",
-"El CPU está saturado",
-"El disco está lleno",
-"No hay usuarios"
+"Estandarizar la seguridad de acceso",
+"Reducir usuarios",
+"Aumentar velocidad",
+"Eliminar procesos"
+],
+correcta:0
+},
+
+/* =========================
+MANTENIMIENTO
+========================= */
+
+{
+pregunta:"¿Qué hace apt update?",
+opciones:[
+"Actualiza la lista de paquetes disponibles",
+"Instala programas",
+"Elimina archivos",
+"Reinicia el sistema"
 ],
 correcta:0
 },
 
 {
-pregunta:"La memoria caché sirve para:",
+pregunta:"¿Qué hace apt upgrade?",
 opciones:[
-"Acelerar el acceso a datos",
-"Reducir el uso del CPU",
-"Eliminar procesos",
-"Apagar el sistema"
+"Instala las actualizaciones disponibles",
+"Elimina usuarios",
+"Formatea disco",
+"Cierra procesos"
 ],
 correcta:0
 },
 
 {
-pregunta:"El comando df permite:",
+pregunta:"¿Qué ocurre si ejecutas update pero no upgrade?",
 opciones:[
-"Ver el uso del disco",
-"Ver procesos",
-"Ver memoria",
-"Ver CPU"
+"Solo se actualiza la lista, no se instalan mejoras",
+"El sistema se actualiza completamente",
+"Se eliminan paquetes",
+"No pasa nada"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si el disco está lleno, puede causar:",
+pregunta:"¿Para qué sirve apt autoremove?",
 opciones:[
-"Errores al guardar archivos",
-"Aumento de CPU",
+"Eliminar paquetes innecesarios",
+"Aumentar memoria",
+"Reducir CPU",
+"Eliminar usuarios"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué riesgo existe al no actualizar el sistema?",
+opciones:[
+"Vulnerabilidades de seguridad",
 "Mejor rendimiento",
-"Más memoria disponible"
+"Menos procesos",
+"Ninguno"
 ],
 correcta:0
 },
 
 {
-pregunta:"El sistema operativo administra recursos como:",
+pregunta:"¿Por qué el mantenimiento es preventivo?",
 opciones:[
-"CPU, memoria y disco",
-"Solo CPU",
-"Solo memoria",
-"Solo red"
+"Evita fallos antes de que ocurran",
+"Corrige errores después",
+"Reduce usuarios",
+"No tiene función"
 ],
 correcta:0
 },
 
 {
-pregunta:"El rendimiento del sistema depende de:",
+pregunta:"¿Qué consecuencia tiene acumular paquetes innecesarios?",
 opciones:[
-"La gestión eficiente de recursos",
-"El color de la interfaz",
-"La marca del teclado",
-"El tipo de monitor"
+"Ocupación de espacio y posible degradación",
+"Mejora el sistema",
+"Aumenta CPU",
+"No afecta"
 ],
 correcta:0
 },
 
 {
-pregunta:"Monitorear el sistema permite:",
+pregunta:"¿Qué relación tiene el mantenimiento con la seguridad?",
 opciones:[
-"Detectar problemas y tomar decisiones",
-"Eliminar el sistema operativo",
-"Reducir la memoria física",
-"Desactivar procesos automáticamente"
+"Reduce vulnerabilidades",
+"No tiene relación",
+"Aumenta procesos",
+"Reduce red"
 ],
 correcta:0
 },
 
 {
-pregunta:"Un sistema lento puede deberse a:",
+pregunta:"¿Qué acción es adecuada ante un sistema desactualizado?",
 opciones:[
-"Falta de recursos o mala gestión",
-"Demasiada memoria libre",
-"Pocos procesos",
-"CPU inactivo"
+"Actualizar paquetes",
+"Apagar sistema",
+"Ignorar",
+"Eliminar archivos"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si el CPU está inactivo pero el sistema lento:",
+pregunta:"¿Qué busca un plan de mantenimiento?",
 opciones:[
-"Puede haber cuello de botella en otro recurso",
-"Todo funciona bien",
-"No hay procesos",
-"El sistema está apagado"
+"Prevenir fallos y optimizar recursos",
+"Aumentar errores",
+"Reducir seguridad",
+"Eliminar usuarios"
+],
+correcta:0
+},
+
+/* =========================
+RESPALDOS
+========================= */
+
+{
+pregunta:"¿Qué tipo de respaldo es cp -r?",
+opciones:[
+"Completo",
+"Incremental",
+"Diferencial",
+"Parcial"
 ],
 correcta:0
 },
 
 {
-pregunta:"El análisis de desempeño implica:",
+pregunta:"¿Por qué es respaldo completo?",
 opciones:[
-"Interpretar múltiples métricas",
-"Ver solo CPU",
-"Revisar solo memoria",
-"Ignorar datos"
+"Copia toda la información",
+"Solo copia cambios",
+"Solo copia archivos nuevos",
+"No copia nada"
 ],
 correcta:0
 },
 
 {
-pregunta:"Una buena práctica es:",
+pregunta:"¿Ventaja del respaldo completo?",
 opciones:[
-"Monitorear constantemente el sistema",
-"Ignorar alertas",
-"Apagar sin revisar",
-"Eliminar procesos al azar"
+"Fácil recuperación",
+"Menor espacio",
+"Más rápido siempre",
+"Menos seguro"
 ],
 correcta:0
 },
 
 {
-pregunta:"El kernel es responsable de:",
+pregunta:"¿Desventaja del respaldo completo?",
 opciones:[
-"Gestionar recursos del sistema",
-"Mostrar gráficos",
-"Navegar en internet",
-"Editar documentos"
+"Mayor uso de espacio",
+"No guarda datos",
+"Es inseguro",
+"No funciona"
 ],
 correcta:0
 },
 
 {
-pregunta:"Un proceso zombie es:",
+pregunta:"¿Qué pasa si no hay respaldo?",
 opciones:[
-"Un proceso finalizado pero no liberado",
-"Un proceso activo",
-"Un proceso en ejecución",
-"Un proceso detenido"
+"Se pierde la información",
+"No pasa nada",
+"Mejora el sistema",
+"Reduce CPU"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante verificar un respaldo?",
+opciones:[
+"Confirmar que la copia funciona",
+"Reducir memoria",
+"Aumentar CPU",
+"No es necesario"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué objetivo tiene un respaldo?",
+opciones:[
+"Recuperar información ante fallos",
+"Eliminar archivos",
+"Reducir procesos",
+"Optimizar CPU"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ocurre si el respaldo está dañado?",
+opciones:[
+"No se puede recuperar la información",
+"Se mejora el sistema",
+"No afecta",
+"Aumenta rendimiento"
+],
+correcta:0
+},
+
+/* =========================
+CRON (AUTOMATIZACIÓN)
+========================= */
+
+{
+pregunta:"¿Qué es cron en sistemas Linux?",
+opciones:[
+"Un programador de tareas automáticas",
+"Un antivirus",
+"Un gestor de archivos",
+"Un editor de texto"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Para qué sirve cron?",
+opciones:[
+"Ejecutar tareas automáticamente en horarios definidos",
+"Eliminar procesos",
+"Actualizar el sistema automáticamente sin control",
+"Reducir el uso de memoria"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué representa la expresión 0 2 * * *?",
+opciones:[
+"Ejecutar una tarea todos los días a las 2:00 AM",
+"Ejecutar cada minuto",
+"Ejecutar cada hora",
+"Ejecutar una vez al mes"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué campo representa la hora en una expresión cron?",
+opciones:[
+"El segundo campo",
+"El primero",
+"El tercero",
+"El cuarto"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ventaja tiene automatizar respaldos?",
+opciones:[
+"Evitar errores humanos y asegurar ejecución periódica",
+"Reducir CPU",
+"Aumentar memoria",
+"Eliminar archivos automáticamente"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué sucede si no se automatizan los respaldos?",
+opciones:[
+"Dependen de intervención manual y pueden olvidarse",
+"Se ejecutan automáticamente",
+"Mejoran rendimiento",
+"No cambia nada"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante validar una tarea cron?",
+opciones:[
+"Para asegurarse de que realmente se ejecuta",
+"Para reducir memoria",
+"Aumentar CPU",
+"No es necesario"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué problema puede existir si una tarea cron falla?",
+opciones:[
+"No se realiza el respaldo esperado",
+"Se mejora el sistema",
+"No tiene impacto",
+"Aumenta rendimiento"
+],
+correcta:0
+},
+
+/* =========================
+INTEGRADOR
+========================= */
+
+{
+pregunta:"¿Qué ocurre si los usuarios no siguen las políticas de seguridad?",
+opciones:[
+"La seguridad del sistema se compromete",
+"El sistema mejora",
+"No pasa nada",
+"Se eliminan riesgos"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué elemento es más importante en la seguridad del sistema?",
+opciones:[
+"Todos son importantes y trabajan en conjunto",
+"Solo el firewall",
+"Solo los usuarios",
+"Solo las contraseñas"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué pasaría en un sistema donde todos son administradores, hay permisos abiertos y puertos expuestos?",
+opciones:[
+"El sistema tiene alto riesgo de vulnerabilidad",
+"El sistema es seguro",
+"No tiene impacto",
+"Mejora rendimiento"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué la seguridad no depende de una sola configuración?",
+opciones:[
+"Porque es un conjunto de controles y decisiones",
+"Porque solo depende del usuario",
+"Porque depende del hardware",
+"No depende de nada"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué relación existe entre usuarios, permisos y firewall?",
+opciones:[
+"Todos contribuyen a la seguridad del sistema",
+"No tienen relación",
+"Solo afectan el rendimiento",
+"Solo afectan memoria"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ocurre si un permiso está mal configurado?",
+opciones:[
+"Puede generar vulnerabilidades",
+"Mejora la seguridad",
+"No tiene impacto",
+"Reduce CPU"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué sucede si el sistema está actualizado pero mal configurado?",
+opciones:[
+"Sigue siendo vulnerable",
+"Es totalmente seguro",
+"No importa",
+"Mejora rendimiento"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué decisión debe tomar un administrador ante múltiples riesgos?",
+opciones:[
+"Priorizar según nivel de riesgo",
+"Ignorar",
+"Eliminar sistema",
+"No hacer nada"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué objetivo tiene integrar todas las medidas de seguridad?",
+opciones:[
+"Reducir riesgos de manera integral",
+"Reducir CPU",
+"Aumentar memoria",
+"Eliminar usuarios"
 ],
 correcta:0
 }
