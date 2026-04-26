@@ -1,829 +1,532 @@
-    window.banco = [
+window.banco = [
 
 /* =========================
-ANÁLISIS DE RIESGOS
+SOFTWARE LIBRE Y SERVIDORES
 ========================= */
 
 {
-pregunta:"¿Cuál es la diferencia correcta entre activo, amenaza e impacto?",
+pregunta:"¿Qué característica define correctamente a un sistema operativo de software libre en servidores?",
 opciones:[
-"Activo es lo que se protege, amenaza es la causa y el impacto es la consecuencia",
-"Activo es el daño, amenaza es la solución e impacto es el proceso",
-"Activo es un usuario, amenaza es un comando e impacto es un archivo",
-"No existe diferencia entre ellos"
+"Permite acceso al código fuente y su modificación",
+"Es gratuito pero no modificable",
+"Solo puede usarse en equipos personales",
+"Está limitado a uso educativo"
 ],
 correcta:0
 },
 
 {
-pregunta:"Un estudiante define como amenaza 'pérdida de información'. ¿Qué error comete?",
+pregunta:"¿Cuál es una ventaja clave del software libre en servidores empresariales?",
 opciones:[
-"Confunde impacto con amenaza",
-"Confunde activo con impacto",
-"No existe error",
-"Confunde sistema con usuario"
+"Evita costos de licencias y permite personalización",
+"Elimina la necesidad de administración",
+"Funciona sin configuración",
+"No requiere actualizaciones"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Por qué el análisis de riesgos debe realizarse antes de configurar un sistema como Ubuntu?",
+pregunta:"¿Qué implica que una distribución Linux tenga soporte comunitario?",
 opciones:[
-"Permite identificar qué proteger y definir controles adecuados",
-"Reduce automáticamente el uso de CPU",
-"Evita la instalación de software",
-"Mejora la velocidad de red"
+"Usuarios y desarrolladores contribuyen a su mantenimiento",
+"Solo empresas pueden modificarla",
+"No recibe actualizaciones",
+"Depende exclusivamente del hardware"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué describe mejor un activo en un sistema?",
+pregunta:"¿Qué diferencia existe entre software libre y software propietario en servidores?",
 opciones:[
-"Cualquier recurso que tiene valor y debe protegerse",
-"Un error del sistema",
-"Un ataque informático",
-"Un comando de terminal"
+"El libre permite modificar el código, el propietario no",
+"El propietario es más rápido siempre",
+"El libre no es seguro",
+"No existe diferencia"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué representa una amenaza?",
+pregunta:"¿Por qué Linux es ampliamente utilizado en servidores?",
 opciones:[
-"Una causa potencial de daño a un activo",
-"El resultado de un fallo",
-"Un recurso del sistema",
-"Una política de seguridad"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué representa el impacto?",
-opciones:[
-"La consecuencia de que una amenaza se materialice",
-"El origen del problema",
-"Un usuario del sistema",
-"Un proceso activo"
-],
-correcta:0
-},
-
-{
-pregunta:"Si un usuario administrador comparte su contraseña, el nivel de riesgo es:",
-opciones:[
-"Crítico",
-"Bajo",
-"Medio",
-"Irrelevante"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué no todos los riesgos deben clasificarse como altos?",
-opciones:[
-"Depende de impacto y probabilidad",
-"Porque no afectan al sistema",
-"Porque son iguales",
-"Porque no se analizan"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué factor es clave para determinar el nivel de riesgo?",
-opciones:[
-"Impacto y probabilidad",
-"Cantidad de usuarios",
-"Color del sistema",
-"Tipo de hardware"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ocurre si no se realiza análisis de riesgos?",
-opciones:[
-"Se implementan medidas sin criterio",
-"El sistema mejora automáticamente",
-"No afecta en nada",
-"Se optimiza el rendimiento"
+"Por su estabilidad, seguridad y flexibilidad",
+"Porque tiene interfaz gráfica avanzada",
+"Porque consume más recursos",
+"Porque no requiere configuración"
 ],
 correcta:0
 },
 
 /* =========================
-GESTIÓN DE USUARIOS
+DISTRIBUCIONES
 ========================= */
 
 {
-pregunta:"¿Qué implica pertenecer al grupo sudo?",
+pregunta:"¿Cuál es una característica distintiva de Ubuntu Server frente a otras distros?",
 opciones:[
-"Tener privilegios administrativos",
-"Ser usuario limitado",
-"No tener acceso",
-"Solo leer archivos"
+"Facilidad de uso y gran comunidad",
+"Uso exclusivo empresarial",
+"No tiene soporte",
+"No permite paquetes"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Por qué no todos los usuarios deben ser administradores?",
+pregunta:"¿Qué caracteriza a Debian en entornos de servidor?",
 opciones:[
-"Para aplicar el principio de mínimo privilegio",
-"Para mejorar velocidad",
-"Para reducir memoria",
-"Porque no pueden ejecutar comandos"
+"Alta estabilidad y enfoque conservador",
+"Actualizaciones constantes sin pruebas",
+"Uso exclusivo en escritorio",
+"No permite configuraciones"
 ],
 correcta:0
 },
 
 {
-pregunta:"Si todos los usuarios son administradores, ¿qué riesgo existe?",
+pregunta:"¿Qué buscan distribuciones como Rocky Linux?",
 opciones:[
-"Errores y accesos indebidos",
-"Mejor seguridad",
-"Mayor rendimiento",
-"Ninguno"
+"Ser compatibles con entornos empresariales tipo Red Hat",
+"Ser sistemas para videojuegos",
+"Reducir seguridad",
+"Eliminar soporte empresarial"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué diferencia hay entre sudo y root?",
+pregunta:"¿Qué factor es más importante al elegir una distro para servidor?",
 opciones:[
-"sudo da acceso temporal, root es acceso total permanente",
-"No hay diferencia",
-"root es más limitado",
-"sudo no ejecuta comandos"
+"Estabilidad y soporte",
+"Color de interfaz",
+"Cantidad de juegos",
+"Animaciones"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué principio de seguridad se aplica al limitar privilegios?",
+pregunta:"¿Qué significa que una distro sea LTS?",
 opciones:[
-"Mínimo privilegio",
-"Máximo acceso",
-"Acceso libre",
-"Control total"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué podría pasar si un usuario estándar obtiene acceso a sudo?",
-opciones:[
-"Puede ejecutar comandos administrativos",
-"No ocurre nada",
-"Pierde acceso",
-"Se bloquea el sistema"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué es importante verificar grupos de usuario?",
-opciones:[
-"Para confirmar permisos asignados",
-"Para mejorar CPU",
-"Para liberar memoria",
-"Para borrar archivos"
+"Soporte a largo plazo",
+"Mayor velocidad gráfica",
+"Menor tamaño de disco",
+"No requiere mantenimiento"
 ],
 correcta:0
 },
 
 /* =========================
-PERMISOS
+REQUERIMIENTOS
 ========================= */
 
 {
-pregunta:"¿Qué significa chmod 600?",
+pregunta:"¿Por qué los sistemas de servidor suelen requerir menos interfaz gráfica?",
 opciones:[
-"Solo el propietario puede leer y escribir",
-"Todos tienen acceso",
-"Nadie accede",
-"Solo root accede"
+"Para reducir consumo de recursos",
+"Para mejorar animaciones",
+"Para aumentar uso de GPU",
+"Para complicar la administración"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué significa chmod 644?",
+pregunta:"¿Qué recurso es más crítico en un servidor?",
 opciones:[
-"Propietario lee/escribe, otros solo leen",
-"Todos modifican",
-"Nadie lee",
-"Solo root accede"
+"Memoria RAM y CPU",
+"Pantalla",
+"Mouse",
+"Teclado"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué riesgo tiene usar permisos 777?",
+pregunta:"¿Qué implica una instalación mínima?",
 opciones:[
-"Cualquier usuario puede modificar el archivo",
-"Mejora la seguridad",
-"Reduce CPU",
-"No tiene impacto"
+"Solo servicios esenciales sin interfaz gráfica",
+"Todos los programas instalados",
+"Sistema completo con juegos",
+"No incluye kernel"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué propiedad protege el control de permisos?",
+pregunta:"¿Por qué es importante considerar el almacenamiento en servidores?",
 opciones:[
-"Confidencialidad e integridad",
-"Velocidad",
-"CPU",
-"Red"
+"Para garantizar disponibilidad de datos",
+"Para mejorar gráficos",
+"Para reducir CPU",
+"No es relevante"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué sucede si un archivo confidencial tiene permisos abiertos?",
+pregunta:"¿Qué sucede si un servidor no cumple los requisitos mínimos?",
 opciones:[
-"Puede ser accedido o modificado por otros usuarios",
-"Se vuelve más seguro",
-"Reduce memoria",
-"No tiene impacto"
+"Puede fallar o tener bajo rendimiento",
+"Funciona mejor",
+"No tiene impacto",
+"Aumenta velocidad"
 ],
 correcta:0
 },
 
 /* =========================
-FIREWALL
+VIRTUALIZACIÓN
 ========================= */
 
 {
-pregunta:"¿Qué es un firewall?",
+pregunta:"¿Qué es virtualización?",
 opciones:[
-"Sistema que controla tráfico de red",
-"Antivirus",
-"Editor",
-"Gestor de memoria"
+"Crear entornos simulados de hardware",
+"Eliminar hardware",
+"Aumentar memoria física",
+"Reducir CPU"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué implica abrir puertos innecesarios?",
+pregunta:"¿Qué ventaja tiene usar VirtualBox o VMware?",
 opciones:[
-"Aumenta superficie de ataque",
-"Mejora rendimiento",
-"Reduce CPU",
-"No tiene efecto"
+"Permite probar sistemas sin afectar el host",
+"Elimina el sistema operativo",
+"Reduce almacenamiento",
+"No permite instalar sistemas"
 ],
 correcta:0
 },
 
 {
-pregunta:"El puerto 22 corresponde a:",
+pregunta:"¿Qué significa asignar memoria a una máquina virtual?",
 opciones:[
-"SSH",
-"HTTP",
-"FTP",
-"DNS"
+"Reservar recursos del host para la VM",
+"Crear memoria nueva",
+"Eliminar memoria",
+"Duplicar CPU"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Por qué abrir solo servicios necesarios?",
+pregunta:"¿Qué tipo de disco es recomendable en VM?",
 opciones:[
-"Reduce riesgos",
-"Mejora CPU",
-"Reduce memoria",
-"No importa"
+"Dinámico",
+"Físico obligatorio",
+"Sin almacenamiento",
+"Removible siempre"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué puede hacer un atacante con un puerto abierto?",
+pregunta:"¿Qué función tiene el adaptador NAT?",
 opciones:[
-"Intentar acceder o explotar vulnerabilidades",
-"Aumentar rendimiento",
-"Reducir memoria",
-"Nada"
+"Permitir acceso a internet desde la VM",
+"Bloquear red",
+"Eliminar IP",
+"No usar red"
 ],
 correcta:0
 },
 
 /* =========================
-CONTRASEÑAS
+INSTALACIÓN
 ========================= */
 
 {
-pregunta:"¿Qué objetivo tiene una política de contraseñas?",
+pregunta:"¿Qué es una imagen ISO?",
 opciones:[
-"Definir reglas para todas las contraseñas de los usuarios",
-"Crear una contraseña única para el sistema",
-"Eliminar usuarios automáticamente",
-"Reducir el uso de CPU"
+"Archivo que contiene el sistema operativo para instalación",
+"Un programa de edición",
+"Un archivo de texto",
+"Un controlador"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué ventaja principal tiene una contraseña larga?",
+pregunta:"¿Qué ocurre al montar una ISO en una VM?",
 opciones:[
-"Aumenta la resistencia a ataques de fuerza bruta",
-"Reduce el uso de memoria",
-"Mejora la velocidad del sistema",
-"No tiene impacto"
+"Se usa como medio de arranque",
+"Se elimina el sistema",
+"Se bloquea el disco",
+"No ocurre nada"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué tipo de ataque se dificulta con contraseñas largas?",
+pregunta:"¿Qué representa el proceso de particionado?",
 opciones:[
-"Fuerza bruta",
-"Phishing",
-"Denegación de servicio",
-"Intercepción de red"
+"Dividir el disco en secciones",
+"Eliminar disco",
+"Aumentar RAM",
+"Reducir CPU"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Por qué la complejidad en contraseñas es importante?",
+pregunta:"¿Qué función tiene la partición raíz ( / )?",
 opciones:[
-"Evita patrones predecibles",
-"Reduce uso de CPU",
-"Aumenta memoria",
-"No tiene impacto"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué problema puede generar una política de contraseñas demasiado estricta?",
-opciones:[
-"Usuarios pueden escribirlas o reutilizarlas",
-"Mejora la seguridad total",
-"Reduce accesos",
-"No afecta nada"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué es importante el equilibrio entre seguridad y usabilidad?",
-opciones:[
-"Para evitar malas prácticas de los usuarios",
-"Para mejorar CPU",
-"Para reducir disco",
-"No tiene importancia"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué riesgo se reduce al cambiar contraseñas periódicamente?",
-opciones:[
-"Uso indebido de credenciales comprometidas",
-"Consumo de memoria",
-"Uso de CPU",
-"Fallas de disco"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué sucede si no se cambian las contraseñas nunca?",
-opciones:[
-"Mayor riesgo si son comprometidas",
-"Mejora el rendimiento",
-"No pasa nada",
-"Reduce vulnerabilidades"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué característica mejora la seguridad de una contraseña?",
-opciones:[
-"Combinación de diferentes tipos de caracteres",
-"Solo longitud corta",
-"Uso de palabras comunes",
-"Repetición de caracteres"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Cuál es el objetivo de una política institucional de contraseñas?",
-opciones:[
-"Estandarizar la seguridad de acceso",
-"Reducir usuarios",
-"Aumentar velocidad",
-"Eliminar procesos"
-],
-correcta:0
-},
-
-/* =========================
-MANTENIMIENTO
-========================= */
-
-{
-pregunta:"¿Qué hace apt update?",
-opciones:[
-"Actualiza la lista de paquetes disponibles",
-"Instala programas",
-"Elimina archivos",
-"Reinicia el sistema"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué hace apt upgrade?",
-opciones:[
-"Instala las actualizaciones disponibles",
-"Elimina usuarios",
-"Formatea disco",
-"Cierra procesos"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ocurre si ejecutas update pero no upgrade?",
-opciones:[
-"Solo se actualiza la lista, no se instalan mejoras",
-"El sistema se actualiza completamente",
-"Se eliminan paquetes",
-"No pasa nada"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Para qué sirve apt autoremove?",
-opciones:[
-"Eliminar paquetes innecesarios",
-"Aumentar memoria",
-"Reducir CPU",
-"Eliminar usuarios"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué riesgo existe al no actualizar el sistema?",
-opciones:[
-"Vulnerabilidades de seguridad",
-"Mejor rendimiento",
-"Menos procesos",
-"Ninguno"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué el mantenimiento es preventivo?",
-opciones:[
-"Evita fallos antes de que ocurran",
-"Corrige errores después",
-"Reduce usuarios",
+"Contener todo el sistema",
+"Guardar solo usuarios",
+"Almacenar red",
 "No tiene función"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué consecuencia tiene acumular paquetes innecesarios?",
+pregunta:"¿Qué es swap?",
 opciones:[
-"Ocupación de espacio y posible degradación",
-"Mejora el sistema",
-"Aumenta CPU",
-"No afecta"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué relación tiene el mantenimiento con la seguridad?",
-opciones:[
-"Reduce vulnerabilidades",
-"No tiene relación",
-"Aumenta procesos",
-"Reduce red"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué acción es adecuada ante un sistema desactualizado?",
-opciones:[
-"Actualizar paquetes",
-"Apagar sistema",
-"Ignorar",
-"Eliminar archivos"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué busca un plan de mantenimiento?",
-opciones:[
-"Prevenir fallos y optimizar recursos",
-"Aumentar errores",
-"Reducir seguridad",
-"Eliminar usuarios"
+"Espacio de intercambio de memoria",
+"Un usuario",
+"Un comando",
+"Un servicio web"
 ],
 correcta:0
 },
 
 /* =========================
-RESPALDOS
+CONFIGURACIÓN
 ========================= */
 
 {
-pregunta:"¿Qué tipo de respaldo es cp -r?",
+pregunta:"¿Por qué es importante configurar la red en un servidor?",
 opciones:[
-"Completo",
-"Incremental",
-"Diferencial",
-"Parcial"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué es respaldo completo?",
-opciones:[
-"Copia toda la información",
-"Solo copia cambios",
-"Solo copia archivos nuevos",
-"No copia nada"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Ventaja del respaldo completo?",
-opciones:[
-"Fácil recuperación",
-"Menor espacio",
-"Más rápido siempre",
-"Menos seguro"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Desventaja del respaldo completo?",
-opciones:[
-"Mayor uso de espacio",
-"No guarda datos",
-"Es inseguro",
-"No funciona"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué pasa si no hay respaldo?",
-opciones:[
-"Se pierde la información",
-"No pasa nada",
-"Mejora el sistema",
-"Reduce CPU"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué es importante verificar un respaldo?",
-opciones:[
-"Confirmar que la copia funciona",
-"Reducir memoria",
-"Aumentar CPU",
+"Permite comunicación con otros sistemas",
+"Mejora gráficos",
+"Reduce CPU",
 "No es necesario"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué objetivo tiene un respaldo?",
+pregunta:"¿Qué diferencia hay entre IP dinámica y estática?",
 opciones:[
-"Recuperar información ante fallos",
-"Eliminar archivos",
-"Reducir procesos",
-"Optimizar CPU"
+"La dinámica cambia, la estática permanece",
+"No hay diferencia",
+"La estática cambia siempre",
+"La dinámica es fija"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué ocurre si el respaldo está dañado?",
+pregunta:"¿Qué comando permite verificar la IP en Linux?",
 opciones:[
-"No se puede recuperar la información",
-"Se mejora el sistema",
+"ip a",
+"dir",
+"copy",
+"cls"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante actualizar el sistema después de instalar?",
+opciones:[
+"Para corregir errores y vulnerabilidades",
+"Para borrar datos",
+"Para eliminar usuarios",
+"No es necesario"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué hace apt update?",
+opciones:[
+"Actualiza lista de paquetes",
+"Instala sistema",
+"Elimina archivos",
+"Reinicia"
+],
+correcta:0
+},
+
+/* =========================
+SERVICIOS
+========================= */
+
+{
+pregunta:"¿Qué es SSH?",
+opciones:[
+"Protocolo de acceso remoto seguro",
+"Un navegador",
+"Un antivirus",
+"Un editor"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ventaja tiene SSH?",
+opciones:[
+"Administrar el servidor remotamente",
+"Mejorar gráficos",
+"Reducir CPU",
+"No tiene utilidad"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué puerto usa SSH?",
+opciones:[
+"22",
+"80",
+"443",
+"21"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué es un servicio en Linux?",
+opciones:[
+"Proceso que se ejecuta en segundo plano",
+"Un usuario",
+"Un archivo",
+"Un disco"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué hace systemctl?",
+opciones:[
+"Gestiona servicios",
+"Edita archivos",
+"Instala hardware",
+"Reduce memoria"
+],
+correcta:0
+},
+
+/* =========================
+ANÁLISIS CRÍTICO
+========================= */
+
+{
+pregunta:"¿Por qué Linux es preferido en servidores empresariales?",
+opciones:[
+"Mayor estabilidad y control",
+"Más juegos",
+"Más interfaz gráfica",
+"Menos seguridad"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué riesgo existe al no actualizar un servidor?",
+opciones:[
+"Vulnerabilidades",
+"Mejora rendimiento",
+"No pasa nada",
+"Reduce errores"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ocurre si no configuras correctamente la red?",
+opciones:[
+"El servidor no será accesible",
+"Mejora seguridad",
+"No afecta",
+"Aumenta velocidad"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ventaja tiene instalar sin entorno gráfico?",
+opciones:[
+"Menor consumo de recursos",
+"Más animaciones",
+"Más uso de GPU",
+"No hay ventaja"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué implica elegir mal una distro?",
+opciones:[
+"Problemas de compatibilidad o soporte",
+"No afecta",
+"Mejora rendimiento",
+"Aumenta memoria"
+],
+correcta:0
+},
+
+/* =========================
+INTEGRADOR AVANZADO
+========================= */
+
+{
+pregunta:"¿Qué relación existe entre virtualización y pruebas de servidores?",
+opciones:[
+"Permite simular entornos reales sin riesgo",
+"No tienen relación",
+"Reduce seguridad",
+"Elimina hardware"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué pasaría si asignas poca RAM a la VM?",
+opciones:[
+"El sistema será lento o fallará",
+"Mejora rendimiento",
+"No afecta",
+"Aumenta velocidad"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ocurre si el disco es insuficiente?",
+opciones:[
+"No se completa la instalación",
+"Funciona mejor",
 "No afecta",
 "Aumenta rendimiento"
 ],
 correcta:0
 },
 
-/* =========================
-CRON (AUTOMATIZACIÓN)
-========================= */
-
 {
-pregunta:"¿Qué es cron en sistemas Linux?",
+pregunta:"¿Qué significa que un servidor esté operativo?",
 opciones:[
-"Un programador de tareas automáticas",
-"Un antivirus",
-"Un gestor de archivos",
-"Un editor de texto"
+"Está funcionando y prestando servicios",
+"Está apagado",
+"No tiene usuarios",
+"No tiene red"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Para qué sirve cron?",
+pregunta:"¿Qué característica distingue a un administrador de sistemas competente?",
 opciones:[
-"Ejecutar tareas automáticamente en horarios definidos",
-"Eliminar procesos",
-"Actualizar el sistema automáticamente sin control",
-"Reducir el uso de memoria"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué representa la expresión 0 2 * * *?",
-opciones:[
-"Ejecutar una tarea todos los días a las 2:00 AM",
-"Ejecutar cada minuto",
-"Ejecutar cada hora",
-"Ejecutar una vez al mes"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué campo representa la hora en una expresión cron?",
-opciones:[
-"El segundo campo",
-"El primero",
-"El tercero",
-"El cuarto"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ventaja tiene automatizar respaldos?",
-opciones:[
-"Evitar errores humanos y asegurar ejecución periódica",
-"Reducir CPU",
-"Aumentar memoria",
-"Eliminar archivos automáticamente"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué sucede si no se automatizan los respaldos?",
-opciones:[
-"Dependen de intervención manual y pueden olvidarse",
-"Se ejecutan automáticamente",
-"Mejoran rendimiento",
-"No cambia nada"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué es importante validar una tarea cron?",
-opciones:[
-"Para asegurarse de que realmente se ejecuta",
-"Para reducir memoria",
-"Aumentar CPU",
-"No es necesario"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué problema puede existir si una tarea cron falla?",
-opciones:[
-"No se realiza el respaldo esperado",
-"Se mejora el sistema",
-"No tiene impacto",
-"Aumenta rendimiento"
-],
-correcta:0
-},
-
-/* =========================
-INTEGRADOR
-========================= */
-
-{
-pregunta:"¿Qué ocurre si los usuarios no siguen las políticas de seguridad?",
-opciones:[
-"La seguridad del sistema se compromete",
-"El sistema mejora",
-"No pasa nada",
-"Se eliminan riesgos"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué elemento es más importante en la seguridad del sistema?",
-opciones:[
-"Todos son importantes y trabajan en conjunto",
-"Solo el firewall",
-"Solo los usuarios",
-"Solo las contraseñas"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué pasaría en un sistema donde todos son administradores, hay permisos abiertos y puertos expuestos?",
-opciones:[
-"El sistema tiene alto riesgo de vulnerabilidad",
-"El sistema es seguro",
-"No tiene impacto",
-"Mejora rendimiento"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué la seguridad no depende de una sola configuración?",
-opciones:[
-"Porque es un conjunto de controles y decisiones",
-"Porque solo depende del usuario",
-"Porque depende del hardware",
-"No depende de nada"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué relación existe entre usuarios, permisos y firewall?",
-opciones:[
-"Todos contribuyen a la seguridad del sistema",
-"No tienen relación",
-"Solo afectan el rendimiento",
-"Solo afectan memoria"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ocurre si un permiso está mal configurado?",
-opciones:[
-"Puede generar vulnerabilidades",
-"Mejora la seguridad",
-"No tiene impacto",
-"Reduce CPU"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué sucede si el sistema está actualizado pero mal configurado?",
-opciones:[
-"Sigue siendo vulnerable",
-"Es totalmente seguro",
-"No importa",
-"Mejora rendimiento"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué decisión debe tomar un administrador ante múltiples riesgos?",
-opciones:[
-"Priorizar según nivel de riesgo",
-"Ignorar",
-"Eliminar sistema",
-"No hacer nada"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué objetivo tiene integrar todas las medidas de seguridad?",
-opciones:[
-"Reducir riesgos de manera integral",
-"Reducir CPU",
-"Aumentar memoria",
-"Eliminar usuarios"
+"Capacidad de análisis y configuración adecuada",
+"Uso de interfaz gráfica",
+"Uso de juegos",
+"No requiere conocimiento"
 ],
 correcta:0
 }
