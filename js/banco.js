@@ -1,355 +1,435 @@
 window.banco = [
 
 /* =========================
-SOFTWARE LIBRE Y SERVIDORES
+MÉTODOS DE INSTALACIÓN
 ========================= */
 
 {
-pregunta:"¿Qué característica define correctamente a un sistema operativo de software libre en servidores?",
+pregunta:"¿Qué caracteriza a una instalación mínima en Linux?",
 opciones:[
-"Permite acceso al código fuente y su modificación",
-"Es gratuito pero no modificable",
-"Solo puede usarse en equipos personales",
-"Está limitado a uso educativo"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Cuál es una ventaja clave del software libre en servidores empresariales?",
-opciones:[
-"Evita costos de licencias y permite personalización",
-"Elimina la necesidad de administración",
-"Funciona sin configuración",
-"No requiere actualizaciones"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué implica que una distribución Linux tenga soporte comunitario?",
-opciones:[
-"Usuarios y desarrolladores contribuyen a su mantenimiento",
-"Solo empresas pueden modificarla",
-"No recibe actualizaciones",
-"Depende exclusivamente del hardware"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué diferencia existe entre software libre y software propietario en servidores?",
-opciones:[
-"El libre permite modificar el código, el propietario no",
-"El propietario es más rápido siempre",
-"El libre no es seguro",
-"No existe diferencia"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué Linux es ampliamente utilizado en servidores?",
-opciones:[
-"Por su estabilidad, seguridad y flexibilidad",
-"Porque tiene interfaz gráfica avanzada",
-"Porque consume más recursos",
-"Porque no requiere configuración"
-],
-correcta:0
-},
-
-/* =========================
-DISTRIBUCIONES
-========================= */
-
-{
-pregunta:"¿Cuál es una característica distintiva de Ubuntu Server frente a otras distros?",
-opciones:[
-"Facilidad de uso y gran comunidad",
-"Uso exclusivo empresarial",
-"No tiene soporte",
-"No permite paquetes"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué caracteriza a Debian en entornos de servidor?",
-opciones:[
-"Alta estabilidad y enfoque conservador",
-"Actualizaciones constantes sin pruebas",
-"Uso exclusivo en escritorio",
-"No permite configuraciones"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué buscan distribuciones como Rocky Linux?",
-opciones:[
-"Ser compatibles con entornos empresariales tipo Red Hat",
-"Ser sistemas para videojuegos",
-"Reducir seguridad",
-"Eliminar soporte empresarial"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué factor es más importante al elegir una distro para servidor?",
-opciones:[
-"Estabilidad y soporte",
-"Color de interfaz",
-"Cantidad de juegos",
-"Animaciones"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué significa que una distro sea LTS?",
-opciones:[
-"Soporte a largo plazo",
-"Mayor velocidad gráfica",
-"Menor tamaño de disco",
-"No requiere mantenimiento"
-],
-correcta:0
-},
-
-/* =========================
-REQUERIMIENTOS
-========================= */
-
-{
-pregunta:"¿Por qué los sistemas de servidor suelen requerir menos interfaz gráfica?",
-opciones:[
-"Para reducir consumo de recursos",
-"Para mejorar animaciones",
-"Para aumentar uso de GPU",
-"Para complicar la administración"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué recurso es más crítico en un servidor?",
-opciones:[
-"Memoria RAM y CPU",
-"Pantalla",
-"Mouse",
-"Teclado"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué implica una instalación mínima?",
-opciones:[
-"Solo servicios esenciales sin interfaz gráfica",
-"Todos los programas instalados",
-"Sistema completo con juegos",
+"Solo incluye servicios esenciales sin entorno gráfico",
+"Incluye todos los programas disponibles",
+"Instala únicamente drivers",
 "No incluye kernel"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Por qué es importante considerar el almacenamiento en servidores?",
+pregunta:"¿Cuál es la principal ventaja de una instalación mínima?",
 opciones:[
-"Para garantizar disponibilidad de datos",
-"Para mejorar gráficos",
-"Para reducir CPU",
-"No es relevante"
+"Menor consumo de recursos",
+"Mayor uso de memoria",
+"Más interfaz gráfica",
+"Mayor consumo de CPU"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué sucede si un servidor no cumple los requisitos mínimos?",
+pregunta:"¿Qué es una instalación completa?",
 opciones:[
-"Puede fallar o tener bajo rendimiento",
-"Funciona mejor",
-"No tiene impacto",
+"Incluye múltiples paquetes y herramientas adicionales",
+"No incluye programas",
+"Solo instala red",
+"Elimina servicios"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué es NetInstall?",
+opciones:[
+"Instalación que descarga paquetes desde internet",
+"Instalación sin red",
+"Instalación manual",
+"Instalación desde USB"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ventaja tiene NetInstall?",
+opciones:[
+"Instala solo lo necesario desde internet",
+"Instala todo automáticamente sin red",
+"No requiere conexión",
+"Elimina configuración"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué es Kickstart o Preseed?",
+opciones:[
+"Métodos de instalación automatizada",
+"Tipos de kernel",
+"Sistemas de archivos",
+"Protocolos de red"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Cuál es el beneficio de la instalación automatizada?",
+opciones:[
+"Ahorra tiempo en múltiples instalaciones",
+"Reduce seguridad",
+"Aumenta errores",
+"Elimina configuración"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué método es más útil en empresas grandes?",
+opciones:[
+"Instalación automatizada",
+"Instalación manual siempre",
+"Instalación completa",
+"Ninguno"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué método usarías para aprender Linux?",
+opciones:[
+"Instalación mínima o manual",
+"Automatizada siempre",
+"Ninguno",
+"Solo completa"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué implica elegir mal un método de instalación?",
+opciones:[
+"Uso ineficiente de recursos",
+"Mejor rendimiento",
+"No afecta",
+"Aumenta seguridad"
+],
+correcta:0
+},
+
+/* =========================
+CONFIGURACIÓN DEL SISTEMA
+========================= */
+
+{
+pregunta:"¿Qué es el hostname en un servidor?",
+opciones:[
+"Nombre del equipo en la red",
+"Dirección IP",
+"Usuario",
+"Puerto"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante cambiar el hostname?",
+opciones:[
+"Identificar el servidor en la red",
+"Mejorar gráficos",
+"Reducir CPU",
+"No tiene importancia"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando se utiliza para cambiar el hostname en Linux?",
+opciones:[
+"hostnamectl",
+"ipconfig",
+"dir",
+"ping"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué permite configurar timedatectl?",
+opciones:[
+"Fecha y zona horaria",
+"Usuarios",
+"Red",
+"Disco"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante la zona horaria en servidores?",
+opciones:[
+"Sincronización correcta de eventos",
+"Mejorar velocidad",
+"Aumentar RAM",
+"No importa"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando se usa para crear usuarios?",
+opciones:[
+"adduser",
+"mkuser",
+"new",
+"usercreate"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué no se recomienda usar root directamente?",
+opciones:[
+"Riesgos de seguridad",
+"Reduce rendimiento",
+"Elimina usuarios",
+"No permite acceso"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué significa dar permisos sudo?",
+opciones:[
+"Permitir ejecutar tareas administrativas",
+"Eliminar usuario",
+"Crear red",
+"Reducir seguridad"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué archivo contiene los usuarios del sistema?",
+opciones:[
+"/etc/passwd",
+"/etc/network",
+"/home",
+"/var"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ocurre si no gestionas bien los usuarios?",
+opciones:[
+"Riesgos de acceso no autorizado",
+"Mejor rendimiento",
+"No afecta",
 "Aumenta velocidad"
 ],
 correcta:0
 },
 
 /* =========================
-VIRTUALIZACIÓN
+CONFIGURACIÓN DE RED
 ========================= */
 
 {
-pregunta:"¿Qué es virtualización?",
+pregunta:"¿Qué comando muestra la configuración de red?",
 opciones:[
-"Crear entornos simulados de hardware",
-"Eliminar hardware",
-"Aumentar memoria física",
-"Reducir CPU"
+"ip a",
+"dir",
+"copy",
+"lsusb"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué ventaja tiene usar VirtualBox o VMware?",
+pregunta:"¿Qué es una IP estática?",
 opciones:[
-"Permite probar sistemas sin afectar el host",
-"Elimina el sistema operativo",
-"Reduce almacenamiento",
-"No permite instalar sistemas"
+"Dirección fija que no cambia",
+"Dirección aleatoria",
+"Dirección temporal",
+"Dirección interna"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué significa asignar memoria a una máquina virtual?",
+pregunta:"¿Qué es DHCP?",
 opciones:[
-"Reservar recursos del host para la VM",
-"Crear memoria nueva",
-"Eliminar memoria",
-"Duplicar CPU"
+"Asignación automática de IP",
+"Asignación manual",
+"Firewall",
+"Servicio web"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué tipo de disco es recomendable en VM?",
+pregunta:"¿Qué comando se usa para probar conectividad?",
 opciones:[
-"Dinámico",
-"Físico obligatorio",
-"Sin almacenamiento",
-"Removible siempre"
+"ping",
+"dir",
+"ls",
+"nano"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué función tiene el adaptador NAT?",
+pregunta:"¿Qué indica que el ping funciona?",
 opciones:[
-"Permitir acceso a internet desde la VM",
-"Bloquear red",
-"Eliminar IP",
-"No usar red"
+"Hay conexión de red",
+"No hay conexión",
+"Falla el sistema",
+"No hay usuarios"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando muestra puertos abiertos?",
+opciones:[
+"ss -tuln",
+"dir",
+"ps",
+"top"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante revisar puertos?",
+opciones:[
+"Evitar accesos no autorizados",
+"Mejorar gráficos",
+"Aumentar CPU",
+"No es necesario"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué pasa si la red está mal configurada?",
+opciones:[
+"El servidor no será accesible",
+"Mejora rendimiento",
+"No afecta",
+"Aumenta velocidad"
 ],
 correcta:0
 },
 
 /* =========================
-INSTALACIÓN
+SEGURIDAD
 ========================= */
 
 {
-pregunta:"¿Qué es una imagen ISO?",
+pregunta:"¿Por qué es importante actualizar el sistema?",
 opciones:[
-"Archivo que contiene el sistema operativo para instalación",
-"Un programa de edición",
-"Un archivo de texto",
-"Un controlador"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ocurre al montar una ISO en una VM?",
-opciones:[
-"Se usa como medio de arranque",
-"Se elimina el sistema",
-"Se bloquea el disco",
-"No ocurre nada"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué representa el proceso de particionado?",
-opciones:[
-"Dividir el disco en secciones",
-"Eliminar disco",
+"Corregir vulnerabilidades",
+"Eliminar usuarios",
 "Aumentar RAM",
-"Reducir CPU"
+"No es necesario"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué función tiene la partición raíz ( / )?",
+pregunta:"¿Qué herramienta se usa como firewall básico en Ubuntu?",
 opciones:[
-"Contener todo el sistema",
-"Guardar solo usuarios",
-"Almacenar red",
+"UFW",
+"SSH",
+"APT",
+"DNS"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué hace ufw enable?",
+opciones:[
+"Activa el firewall",
+"Lo elimina",
+"Reinicia sistema",
+"No hace nada"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué significa permitir SSH en firewall?",
+opciones:[
+"Abrir el puerto para acceso remoto",
+"Bloquear red",
+"Eliminar usuario",
 "No tiene función"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué es swap?",
+pregunta:"¿Qué es SSH?",
 opciones:[
-"Espacio de intercambio de memoria",
-"Un usuario",
-"Un comando",
-"Un servicio web"
-],
-correcta:0
-},
-
-/* =========================
-CONFIGURACIÓN
-========================= */
-
-{
-pregunta:"¿Por qué es importante configurar la red en un servidor?",
-opciones:[
-"Permite comunicación con otros sistemas",
-"Mejora gráficos",
-"Reduce CPU",
-"No es necesario"
+"Protocolo de acceso remoto seguro",
+"Firewall",
+"Servidor web",
+"Editor"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué diferencia hay entre IP dinámica y estática?",
+pregunta:"¿Por qué desactivar root en SSH?",
 opciones:[
-"La dinámica cambia, la estática permanece",
-"No hay diferencia",
-"La estática cambia siempre",
-"La dinámica es fija"
+"Mejorar seguridad",
+"Aumentar velocidad",
+"Eliminar red",
+"No afecta"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué comando permite verificar la IP en Linux?",
+pregunta:"¿Qué riesgo hay si no configuras SSH?",
 opciones:[
-"ip a",
-"dir",
-"copy",
-"cls"
+"Accesos no seguros",
+"Mejor rendimiento",
+"No afecta",
+"Aumenta velocidad"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Por qué es importante actualizar el sistema después de instalar?",
+pregunta:"¿Qué hace systemctl?",
 opciones:[
-"Para corregir errores y vulnerabilidades",
-"Para borrar datos",
-"Para eliminar usuarios",
-"No es necesario"
+"Gestiona servicios",
+"Crea usuarios",
+"Configura red",
+"Edita archivos"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué hace apt update?",
+pregunta:"¿Por qué revisar servicios activos?",
 opciones:[
-"Actualiza lista de paquetes",
-"Instala sistema",
-"Elimina archivos",
-"Reinicia"
+"Detectar procesos innecesarios",
+"Mejorar gráficos",
+"Aumentar RAM",
+"No importa"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué pasa si no aplicas seguridad?",
+opciones:[
+"El servidor es vulnerable",
+"Mejora rendimiento",
+"No afecta",
+"Aumenta velocidad"
 ],
 correcta:0
 },
@@ -359,174 +439,148 @@ SERVICIOS
 ========================= */
 
 {
-pregunta:"¿Qué es SSH?",
+pregunta:"¿Qué es un servidor web?",
 opciones:[
-"Protocolo de acceso remoto seguro",
-"Un navegador",
-"Un antivirus",
-"Un editor"
+"Servicio que responde peticiones HTTP",
+"Usuario",
+"Disco",
+"Firewall"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué ventaja tiene SSH?",
+pregunta:"¿Qué hace Apache?",
 opciones:[
-"Administrar el servidor remotamente",
-"Mejorar gráficos",
-"Reducir CPU",
-"No tiene utilidad"
+"Servidor web",
+"Firewall",
+"Editor",
+"Antivirus"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué puerto usa SSH?",
+pregunta:"¿Qué comando instala Apache en Ubuntu?",
 opciones:[
-"22",
-"80",
-"443",
-"21"
+"apt install apache2",
+"install apache",
+"run apache",
+"get apache"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué es un servicio en Linux?",
+pregunta:"¿Cómo verificas si Apache funciona?",
 opciones:[
-"Proceso que se ejecuta en segundo plano",
-"Un usuario",
-"Un archivo",
-"Un disco"
+"systemctl status apache2",
+"ping",
+"ls",
+"nano"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué hace systemctl?",
+pregunta:"¿Qué significa que un servicio esté activo?",
 opciones:[
-"Gestiona servicios",
-"Edita archivos",
-"Instala hardware",
-"Reduce memoria"
-],
-correcta:0
-},
-
-/* =========================
-ANÁLISIS CRÍTICO
-========================= */
-
-{
-pregunta:"¿Por qué Linux es preferido en servidores empresariales?",
-opciones:[
-"Mayor estabilidad y control",
-"Más juegos",
-"Más interfaz gráfica",
-"Menos seguridad"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué riesgo existe al no actualizar un servidor?",
-opciones:[
-"Vulnerabilidades",
-"Mejora rendimiento",
-"No pasa nada",
-"Reduce errores"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ocurre si no configuras correctamente la red?",
-opciones:[
-"El servidor no será accesible",
-"Mejora seguridad",
-"No afecta",
-"Aumenta velocidad"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ventaja tiene instalar sin entorno gráfico?",
-opciones:[
-"Menor consumo de recursos",
-"Más animaciones",
-"Más uso de GPU",
-"No hay ventaja"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué implica elegir mal una distro?",
-opciones:[
-"Problemas de compatibilidad o soporte",
-"No afecta",
-"Mejora rendimiento",
-"Aumenta memoria"
-],
-correcta:0
-},
-
-/* =========================
-INTEGRADOR AVANZADO
-========================= */
-
-{
-pregunta:"¿Qué relación existe entre virtualización y pruebas de servidores?",
-opciones:[
-"Permite simular entornos reales sin riesgo",
-"No tienen relación",
-"Reduce seguridad",
-"Elimina hardware"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué pasaría si asignas poca RAM a la VM?",
-opciones:[
-"El sistema será lento o fallará",
-"Mejora rendimiento",
-"No afecta",
-"Aumenta velocidad"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ocurre si el disco es insuficiente?",
-opciones:[
-"No se completa la instalación",
-"Funciona mejor",
-"No afecta",
-"Aumenta rendimiento"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué significa que un servidor esté operativo?",
-opciones:[
-"Está funcionando y prestando servicios",
+"Está funcionando correctamente",
 "Está apagado",
-"No tiene usuarios",
+"No existe",
 "No tiene red"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué característica distingue a un administrador de sistemas competente?",
+pregunta:"¿Qué ocurre si el servicio no arranca?",
 opciones:[
-"Capacidad de análisis y configuración adecuada",
-"Uso de interfaz gráfica",
-"Uso de juegos",
-"No requiere conocimiento"
+"No estará disponible",
+"Mejora rendimiento",
+"No afecta",
+"Aumenta velocidad"
+],
+correcta:0
+},
+
+/* =========================
+VALIDACIÓN Y ANÁLISIS
+========================= */
+
+{
+pregunta:"¿Qué comando muestra el usuario actual?",
+opciones:[
+"whoami",
+"dir",
+"ping",
+"nano"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué muestra df -h?",
+opciones:[
+"Uso de disco",
+"Usuarios",
+"Red",
+"Procesos"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué muestra free -h?",
+opciones:[
+"Uso de memoria",
+"Disco",
+"Usuarios",
+"Red"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué significa que un servidor esté configurado?",
+opciones:[
+"Listo para operar y ofrecer servicios",
+"Apagado",
+"Sin usuarios",
+"Sin red"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué diferencia hay entre instalar y configurar?",
+opciones:[
+"Instalar es colocar el sistema, configurar es ajustarlo",
+"No hay diferencia",
+"Configurar elimina sistema",
+"Instalar asegura red"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué riesgo existe si no documentas?",
+opciones:[
+"No se puede replicar el proceso",
+"Mejora rendimiento",
+"No afecta",
+"Aumenta seguridad"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué caracteriza a un administrador competente?",
+opciones:[
+"Configura, analiza y asegura sistemas",
+"Solo instala programas",
+"Usa interfaz gráfica",
+"No documenta"
 ],
 correcta:0
 }
