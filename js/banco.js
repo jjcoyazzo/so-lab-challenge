@@ -1,586 +1,678 @@
 window.banco = [
 
 /* =========================
-MÉTODOS DE INSTALACIÓN
+MANEJO DE ARCHIVOS Y DIRECTORIOS
 ========================= */
 
 {
-pregunta:"¿Qué caracteriza a una instalación mínima en Linux?",
+pregunta:"¿Qué comando se usa para crear directorios en Linux?",
 opciones:[
-"Solo incluye servicios esenciales sin entorno gráfico",
-"Incluye todos los programas disponibles",
-"Instala únicamente drivers",
-"No incluye kernel"
+"mkdir",
+"dir",
+"make",
+"create"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Cuál es la principal ventaja de una instalación mínima?",
+pregunta:"¿Qué comando permite listar archivos y directorios?",
 opciones:[
-"Menor consumo de recursos",
-"Mayor uso de memoria",
-"Más interfaz gráfica",
-"Mayor consumo de CPU"
+"ls",
+"list",
+"show",
+"view"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué es una instalación completa?",
+pregunta:"¿Qué comando se utiliza para copiar archivos?",
 opciones:[
-"Incluye múltiples paquetes y herramientas adicionales",
-"No incluye programas",
-"Solo instala red",
-"Elimina servicios"
+"cp",
+"copy",
+"mv",
+"cat"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué es NetInstall?",
+pregunta:"¿Qué comando mueve o renombra archivos?",
 opciones:[
-"Instalación que descarga paquetes desde internet",
-"Instalación sin red",
-"Instalación manual",
-"Instalación desde USB"
+"mv",
+"cp",
+"movefile",
+"renamefile"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué ventaja tiene NetInstall?",
+pregunta:"¿Qué comando elimina archivos?",
 opciones:[
-"Instala solo lo necesario desde internet",
-"Instala todo automáticamente sin red",
-"No requiere conexión",
-"Elimina configuración"
+"rm",
+"del",
+"erase",
+"clear"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué es Kickstart o Preseed?",
+pregunta:"¿Qué comando elimina directorios vacíos?",
 opciones:[
-"Métodos de instalación automatizada",
-"Tipos de kernel",
-"Sistemas de archivos",
-"Protocolos de red"
+"rmdir",
+"rmfile",
+"delete",
+"erase"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Cuál es el beneficio de la instalación automatizada?",
+pregunta:"¿Qué comando muestra el contenido de un archivo?",
 opciones:[
-"Ahorra tiempo en múltiples instalaciones",
-"Reduce seguridad",
-"Aumenta errores",
-"Elimina configuración"
+"cat",
+"show",
+"view",
+"open"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué método es más útil en empresas grandes?",
+pregunta:"¿Qué comando cambia permisos en Linux?",
 opciones:[
-"Instalación automatizada",
-"Instalación manual siempre",
-"Instalación completa",
-"Ninguno"
+"chmod",
+"chperm",
+"perm",
+"grant"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué método usarías para aprender Linux?",
+pregunta:"¿Qué comando cambia propietario de un archivo?",
 opciones:[
-"Instalación mínima o manual",
-"Automatizada siempre",
-"Ninguno",
-"Solo completa"
+"chown",
+"owner",
+"chmod",
+"passwd"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué implica elegir mal un método de instalación?",
+pregunta:"¿Por qué es importante organizar archivos y directorios?",
 opciones:[
-"Uso ineficiente de recursos",
-"Mejor rendimiento",
-"No afecta",
-"Aumenta seguridad"
-],
-correcta:0
-},
-
-/* =========================
-CONFIGURACIÓN DEL SISTEMA
-========================= */
-
-{
-pregunta:"¿Qué es el hostname en un servidor?",
-opciones:[
-"Nombre del equipo en la red",
-"Dirección IP",
-"Usuario",
-"Puerto"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué es importante cambiar el hostname?",
-opciones:[
-"Identificar el servidor en la red",
-"Mejorar gráficos",
-"Reducir CPU",
+"Facilita administración y seguridad",
+"Aumenta velocidad del internet",
+"Reduce memoria RAM",
 "No tiene importancia"
 ],
 correcta:0
 },
 
-{
-pregunta:"¿Qué comando se utiliza para cambiar el hostname en Linux?",
-opciones:[
-"hostnamectl",
-"ipconfig",
-"dir",
-"ping"
-],
-correcta:0
-},
+/* =========================
+USUARIOS Y GRUPOS
+========================= */
 
 {
-pregunta:"¿Qué permite configurar timedatectl?",
-opciones:[
-"Fecha y zona horaria",
-"Usuarios",
-"Red",
-"Disco"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué es importante la zona horaria en servidores?",
-opciones:[
-"Sincronización correcta de eventos",
-"Mejorar velocidad",
-"Aumentar RAM",
-"No importa"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué comando se usa para crear usuarios?",
+pregunta:"¿Qué comando crea usuarios en Linux?",
 opciones:[
 "adduser",
 "mkuser",
-"new",
-"usercreate"
+"usernew",
+"createuser"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Por qué no se recomienda usar root directamente?",
+pregunta:"¿Qué comando crea grupos?",
 opciones:[
-"Riesgos de seguridad",
-"Reduce rendimiento",
-"Elimina usuarios",
-"No permite acceso"
+"groupadd",
+"addgroupuser",
+"mkgroup",
+"newgroup"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué significa dar permisos sudo?",
+pregunta:"¿Qué permite un grupo en Linux?",
 opciones:[
-"Permitir ejecutar tareas administrativas",
-"Eliminar usuario",
-"Crear red",
-"Reducir seguridad"
+"Organizar permisos para varios usuarios",
+"Aumentar memoria",
+"Eliminar archivos",
+"Mejorar gráficos"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué archivo contiene los usuarios del sistema?",
+pregunta:"¿Qué comando cambia la contraseña de un usuario?",
 opciones:[
-"/etc/passwd",
-"/etc/network",
-"/home",
-"/var"
+"passwd",
+"password",
+"changepass",
+"setpass"
 ],
 correcta:0
 },
-
-{
-pregunta:"¿Qué ocurre si no gestionas bien los usuarios?",
-opciones:[
-"Riesgos de acceso no autorizado",
-"Mejor rendimiento",
-"No afecta",
-"Aumenta velocidad"
-],
-correcta:0
-},
-
-/* =========================
-CONFIGURACIÓN DE RED
-========================= */
-
-{
-pregunta:"¿Qué comando muestra la configuración de red?",
-opciones:[
-"ip a",
-"dir",
-"copy",
-"lsusb"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué es una IP estática?",
-opciones:[
-"Dirección fija que no cambia",
-"Dirección aleatoria",
-"Dirección temporal",
-"Dirección interna"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué es DHCP?",
-opciones:[
-"Asignación automática de IP",
-"Asignación manual",
-"Firewall",
-"Servicio web"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué comando se usa para probar conectividad?",
-opciones:[
-"ping",
-"dir",
-"ls",
-"nano"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué indica que el ping funciona?",
-opciones:[
-"Hay conexión de red",
-"No hay conexión",
-"Falla el sistema",
-"No hay usuarios"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué comando muestra puertos abiertos?",
-opciones:[
-"ss -tuln",
-"dir",
-"ps",
-"top"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué es importante revisar puertos?",
-opciones:[
-"Evitar accesos no autorizados",
-"Mejorar gráficos",
-"Aumentar CPU",
-"No es necesario"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué pasa si la red está mal configurada?",
-opciones:[
-"El servidor no será accesible",
-"Mejora rendimiento",
-"No afecta",
-"Aumenta velocidad"
-],
-correcta:0
-},
-
-/* =========================
-SEGURIDAD
-========================= */
-
-{
-pregunta:"¿Por qué es importante actualizar el sistema?",
-opciones:[
-"Corregir vulnerabilidades",
-"Eliminar usuarios",
-"Aumentar RAM",
-"No es necesario"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué herramienta se usa como firewall básico en Ubuntu?",
-opciones:[
-"UFW",
-"SSH",
-"APT",
-"DNS"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué hace ufw enable?",
-opciones:[
-"Activa el firewall",
-"Lo elimina",
-"Reinicia sistema",
-"No hace nada"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué significa permitir SSH en firewall?",
-opciones:[
-"Abrir el puerto para acceso remoto",
-"Bloquear red",
-"Eliminar usuario",
-"No tiene función"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué es SSH?",
-opciones:[
-"Protocolo de acceso remoto seguro",
-"Firewall",
-"Servidor web",
-"Editor"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué desactivar root en SSH?",
-opciones:[
-"Mejorar seguridad",
-"Aumentar velocidad",
-"Eliminar red",
-"No afecta"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué riesgo hay si no configuras SSH?",
-opciones:[
-"Accesos no seguros",
-"Mejor rendimiento",
-"No afecta",
-"Aumenta velocidad"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué hace systemctl?",
-opciones:[
-"Gestiona servicios",
-"Crea usuarios",
-"Configura red",
-"Edita archivos"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Por qué revisar servicios activos?",
-opciones:[
-"Detectar procesos innecesarios",
-"Mejorar gráficos",
-"Aumentar RAM",
-"No importa"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué pasa si no aplicas seguridad?",
-opciones:[
-"El servidor es vulnerable",
-"Mejora rendimiento",
-"No afecta",
-"Aumenta velocidad"
-],
-correcta:0
-},
-
-/* =========================
-SERVICIOS
-========================= */
-
-{
-pregunta:"¿Qué es un servidor web?",
-opciones:[
-"Servicio que responde peticiones HTTP",
-"Usuario",
-"Disco",
-"Firewall"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué hace Apache?",
-opciones:[
-"Servidor web",
-"Firewall",
-"Editor",
-"Antivirus"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué comando instala Apache en Ubuntu?",
-opciones:[
-"apt install apache2",
-"install apache",
-"run apache",
-"get apache"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Cómo verificas si Apache funciona?",
-opciones:[
-"systemctl status apache2",
-"ping",
-"ls",
-"nano"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué significa que un servicio esté activo?",
-opciones:[
-"Está funcionando correctamente",
-"Está apagado",
-"No existe",
-"No tiene red"
-],
-correcta:0
-},
-
-{
-pregunta:"¿Qué ocurre si el servicio no arranca?",
-opciones:[
-"No estará disponible",
-"Mejora rendimiento",
-"No afecta",
-"Aumenta velocidad"
-],
-correcta:0
-},
-
-/* =========================
-VALIDACIÓN Y ANÁLISIS
-========================= */
 
 {
 pregunta:"¿Qué comando muestra el usuario actual?",
 opciones:[
 "whoami",
+"user",
+"me",
+"current"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando muestra grupos de un usuario?",
+opciones:[
+"groups",
+"showgroups",
+"listgroups",
+"groupview"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué no todos los usuarios deben ser administradores?",
+opciones:[
+"Por seguridad y control del sistema",
+"Para usar menos RAM",
+"Para apagar el sistema",
+"No importa"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ocurre si un usuario tiene permisos excesivos?",
+opciones:[
+"Puede modificar o dañar el sistema",
+"No afecta",
+"Mejora rendimiento",
+"Aumenta velocidad"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué significa bloquear un usuario?",
+opciones:[
+"Impedir temporalmente su acceso",
+"Eliminarlo",
+"Dar permisos root",
+"Apagar el sistema"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué archivo contiene información de usuarios?",
+opciones:[
+"/etc/passwd",
+"/etc/network",
+"/home",
+"/boot"
+],
+correcta:0
+},
+
+/* =========================
+PERMISOS
+========================= */
+
+{
+pregunta:"¿Qué representan los permisos rwx?",
+opciones:[
+"Lectura, escritura y ejecución",
+"Red, web y XML",
+"RAM, web y xorg",
+"Root, write y xserver"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué permiso permite leer un archivo?",
+opciones:[
+"r",
+"w",
+"x",
+"d"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué permiso permite modificar archivos?",
+opciones:[
+"w",
+"r",
+"x",
+"d"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué permiso permite ejecutar archivos?",
+opciones:[
+"x",
+"r",
+"w",
+"e"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué significa chmod 777?",
+opciones:[
+"Todos tienen todos los permisos",
+"Solo root tiene acceso",
+"Archivo bloqueado",
+"Archivo oculto"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué chmod 777 es riesgoso?",
+opciones:[
+"Cualquier usuario puede modificar archivos",
+"Reduce rendimiento",
+"Elimina usuarios",
+"No tiene riesgos"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando muestra permisos de archivos?",
+opciones:[
+"ls -l",
 "dir",
-"ping",
+"tree",
+"pwd"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué son importantes los permisos?",
+opciones:[
+"Protegen información y controlan accesos",
+"Mejoran gráficos",
+"Aumentan RAM",
+"No son necesarios"
+],
+correcta:0
+},
+
+/* =========================
+SERVICIOS Y NIVELES DE EJECUCIÓN
+========================= */
+
+{
+pregunta:"¿Qué es un servicio en Linux?",
+opciones:[
+"Programa que funciona en segundo plano",
+"Usuario",
+"Archivo",
+"Kernel"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué herramienta administra servicios en systemd?",
+opciones:[
+"systemctl",
+"serviceconfig",
+"servicectl",
+"adminservice"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando muestra el estado de un servicio?",
+opciones:[
+"systemctl status",
+"show service",
+"service view",
+"service check"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando inicia un servicio?",
+opciones:[
+"systemctl start",
+"service on",
+"run service",
+"enable service"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando detiene un servicio?",
+opciones:[
+"systemctl stop",
+"killservice",
+"service off",
+"pause service"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando reinicia un servicio?",
+opciones:[
+"systemctl restart",
+"service reset",
+"restart all",
+"reload service"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué significa habilitar un servicio?",
+opciones:[
+"Que inicie automáticamente al arrancar",
+"Eliminarlo",
+"Desactivarlo",
+"Bloquear red"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué son los niveles de ejecución?",
+opciones:[
+"Modos de operación del sistema",
+"Tipos de usuarios",
+"Particiones",
+"Drivers"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué reemplazó a SysVinit en muchas distribuciones modernas?",
+opciones:[
+"systemd",
+"bash",
+"nano",
+"GRUB"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ventaja tiene systemd?",
+opciones:[
+"Administración moderna y rápida de servicios",
+"Elimina usuarios",
+"Reduce disco",
+"No tiene ventajas"
+],
+correcta:0
+},
+
+/* =========================
+INSTALACIÓN DE APLICACIONES
+========================= */
+
+{
+pregunta:"¿Qué comando actualiza repositorios en Ubuntu?",
+opciones:[
+"apt update",
+"update all",
+"upgrade",
+"refresh"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué comando instala programas en Ubuntu?",
+opciones:[
+"apt install",
+"get program",
+"installpkg",
+"programadd"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué hace apt remove?",
+opciones:[
+"Desinstala programas",
+"Instala programas",
+"Actualiza sistema",
+"Reinicia servicios"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué herramienta muestra procesos de manera interactiva?",
+opciones:[
+"htop",
+"nano",
+"curl",
+"tree"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué utilidad tiene tree?",
+opciones:[
+"Mostrar estructura de directorios",
+"Editar archivos",
+"Revisar red",
+"Actualizar sistema"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué hace curl?",
+opciones:[
+"Realiza solicitudes de red",
+"Administra usuarios",
+"Configura permisos",
+"Gestiona disco"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante instalar solo aplicaciones necesarias?",
+opciones:[
+"Reduce riesgos y consumo de recursos",
+"Aumenta vulnerabilidades",
+"Reduce seguridad",
+"No importa"
+],
+correcta:0
+},
+
+/* =========================
+MONITORIZACIÓN DEL SISTEMA
+========================= */
+
+{
+pregunta:"¿Qué comando muestra procesos activos?",
+opciones:[
+"ps",
+"dir",
+"tree",
 "nano"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué muestra df -h?",
+pregunta:"¿Qué comando muestra procesos en tiempo real?",
 opciones:[
-"Uso de disco",
-"Usuarios",
-"Red",
-"Procesos"
+"top",
+"pwd",
+"cat",
+"find"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué muestra free -h?",
+pregunta:"¿Qué comando muestra uso de memoria RAM?",
 opciones:[
-"Uso de memoria",
-"Disco",
-"Usuarios",
-"Red"
+"free -h",
+"df -h",
+"memory",
+"ram"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué significa que un servidor esté configurado?",
+pregunta:"¿Qué comando muestra uso del disco?",
 opciones:[
-"Listo para operar y ofrecer servicios",
-"Apagado",
-"Sin usuarios",
-"Sin red"
+"df -h",
+"disk",
+"space",
+"free"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué diferencia hay entre instalar y configurar?",
+pregunta:"¿Qué comando muestra interfaces de red?",
 opciones:[
-"Instalar es colocar el sistema, configurar es ajustarlo",
-"No hay diferencia",
-"Configurar elimina sistema",
-"Instalar asegura red"
+"ip a",
+"dir",
+"show",
+"route"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué riesgo existe si no documentas?",
+pregunta:"¿Qué comando muestra usuarios conectados?",
 opciones:[
-"No se puede replicar el proceso",
-"Mejora rendimiento",
+"who",
+"usershow",
+"listuser",
+"online"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué es importante monitorear procesos?",
+opciones:[
+"Detectar problemas y consumo excesivo",
+"Mejorar gráficos",
+"Aumentar RAM",
+"No es necesario"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué riesgo existe si no monitoreas el servidor?",
+opciones:[
+"Fallas y problemas no detectados",
+"Mejor rendimiento",
 "No afecta",
-"Aumenta seguridad"
+"Aumenta velocidad"
+],
+correcta:0
+},
+
+/* =========================
+ADMINISTRACIÓN REAL Y ANÁLISIS
+========================= */
+
+{
+pregunta:"¿Qué debe hacer un administrador Linux?",
+opciones:[
+"Gestionar usuarios, permisos y servicios",
+"Solo instalar programas",
+"Solo usar GUI",
+"No documentar"
 ],
 correcta:0
 },
 
 {
-pregunta:"¿Qué caracteriza a un administrador competente?",
+pregunta:"¿Qué diferencia hay entre usuario normal y root?",
 opciones:[
-"Configura, analiza y asegura sistemas",
-"Solo instala programas",
-"Usa interfaz gráfica",
-"No documenta"
+"Root tiene control total del sistema",
+"No hay diferencia",
+"Root usa menos memoria",
+"Usuario normal controla todo"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué documentar configuraciones es importante?",
+opciones:[
+"Permite replicar y solucionar problemas",
+"No sirve",
+"Aumenta velocidad",
+"Reduce CPU"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué caracteriza a un servidor bien administrado?",
+opciones:[
+"Seguridad, monitoreo y control adecuados",
+"Muchos errores",
+"Todos con permisos root",
+"Sin actualizaciones"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Qué ocurre si un servicio crítico falla?",
+opciones:[
+"El servidor puede dejar de funcionar correctamente",
+"No afecta",
+"Mejora seguridad",
+"Aumenta RAM"
+],
+correcta:0
+},
+
+{
+pregunta:"¿Por qué Linux es popular en servidores?",
+opciones:[
+"Estabilidad, seguridad y administración avanzada",
+"Porque consume más recursos",
+"Porque requiere reinicios constantes",
+"No tiene ventajas"
 ],
 correcta:0
 }
